@@ -1,0 +1,7 @@
+body {
+    /* no margin important */
+    margin: 0;
+    padding: 0;
+    /* no scrollbar */
+    overflow: hidden;
+}
