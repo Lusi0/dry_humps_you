@@ -1,6 +1,6 @@
 let img;
 function preload() {
-  img = loadImage('content/img/dry_humps_you.png');
+  img = loadImage('content/img/avery.png');
 }
 
 // get veiwport width
@@ -11,19 +11,17 @@ function windowResized() {
 
 function setup() {
     createCanvas(windowWidth, windowHeight, WEBGL);
+    background(0,0,0);
   }
   
 
 let framecount = 0;
   function draw() {
-    background(220);
+    background(255,255,255);
 
-
-    rotateX(framecount * 0.1);
-    rotateY(framecount * 0.1);
-    rotateZ(framecount * 0.1);
+    rotateY(framecount * -0.01);
     texture(img);
     // draw a circle
-    box(400,400,400);
+    sphere(400,400,400);
     framecount++;
   }
