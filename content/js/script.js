@@ -6,18 +6,20 @@ function preload() {
 // get veiwport width
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
+    background(255,255,255);
 }
 
 
 function setup() {
     createCanvas(windowWidth, windowHeight, WEBGL);
-    background(0,0,0);
+    background(255,255,255);
+    frameRate(100);
   }
   
 
 let framecount = 0;
   function draw() {
-    background(255,255,255);
+    
 
     rotateY(framecount * -0.01);
     texture(img);
